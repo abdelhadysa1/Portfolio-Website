@@ -48,10 +48,15 @@ p {
     .container {
         width: 100%;
     }
+    .box {
+        width: 45%;
+    }
 }
 
 /* Mobile */
 
 @media screen and (max-width: 425px) {
-
+    .box {
+        width: 100%;
+    }
 }
