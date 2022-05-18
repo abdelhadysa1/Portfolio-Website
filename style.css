@@ -1,8 +1,43 @@
+body {
+    color: white;
+}
+
 .container {
     max-width: 1000px;
     min-height: 100vh;
     background-color: black;
     margin: 0 auto;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.box {
+    width: 30%;
+    min-height: 20px;
+    box-sizing: border-box;
+    background-color: purple;
+    padding: 20px;
+    margin: 10px;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-family: 'Koulen', cursive;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1rem;
+    font-family: 'Noto Sans', sans-serif;
+    margin-bottom: 5px;
 }
 
 /* Responsive  Design */
