@@ -1,5 +1,5 @@
 .container {
-    width: 1000px;
+    max-width: 1000px;
     min-height: 100vh;
     background-color: black;
     margin: 0 auto;
