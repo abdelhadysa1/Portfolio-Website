@@ -41,6 +41,7 @@ header :first-child {
     transition: 0.4s border;
     max-width: 335px;
     box-sizing: border-box;
+    user-select: none;
 }
 
 .logo:hover {
@@ -131,6 +132,7 @@ nav li {
     background-color: transparent;
     cursor: pointer;
     transition: 1s color, 0.4s background-color;
+    user-select: none;
 }
 
 .nav-btn:hover {
