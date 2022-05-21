@@ -152,6 +152,10 @@ nav li {
     display: block;
 }
 
+.hide-mobile-tablet {
+    display: block;
+}
+
 /* Tablet */
 
 @media screen and (max-width: 768px) {
@@ -170,6 +174,20 @@ nav li {
     .hide-mobile {
         display: block;
     }
+    .hide-mobile-tablet {
+        display: none;
+    }
+    header {
+        justify-content: center;
+    }
+    .logo {
+        padding: 0;
+        border: 0;
+        text-align: center;
+    }
+    .logo:hover {
+        border: 0;
+    }
 }
 
 /* Mobile */
@@ -186,5 +204,19 @@ nav li {
     }
     .hide-mobile {
         display: none;
+    }
+    .hide-mobile-tablet {
+        display: none;
+    }
+    header {
+        justify-content: center;
+    }
+    .logo {
+        padding: 0;
+        border: 0;
+        text-align: center;
+    }
+    .logo:hover {
+        border: 0;
     }
 }
