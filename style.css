@@ -29,7 +29,6 @@ header {
 }
 
 header :first-child {
-    flex: 2;
     text-decoration: none;
     color: inherit;
 }
@@ -41,29 +40,29 @@ header :first-child {
     align-items: center;
     cursor: pointer;
     transition: 0.4s border;
-    max-width: 335px;
     box-sizing: border-box;
     user-select: none;
+    text-transform: uppercase;
 }
 
 .logo:hover {
-    border: 3px solid rgb(165, 19, 165);
+    border: 2px solid gold;
+}
+
+.logo:hover .logo-title {
+    color: rgb(165, 19, 165);
 }
 
 .logo-title {
     font-weight: 700;
-    font-size: 1.8rem;
-    line-height: 2.4rem;
+    font-size: 1.6rem;
+    line-height: 2.0rem;
     font-family: 'Koulen', cursive;
     margin-right: 5px;
     transition: 1s color;
 }
 
 .logo-title::first-letter {
-    color: rgb(165, 19, 165);
-}
-
-.logo-title:hover {
     color: rgb(165, 19, 165);
 }
 
@@ -133,13 +132,17 @@ nav li {
     border: 1px solid white;
     background-color: transparent;
     cursor: pointer;
-    transition: 1s color, 0.4s background-color;
+    transition: 1s color, 0.4s background-color, 0.4s border;
     user-select: none;
+    text-transform: uppercase;
+    margin-right: 20px;
+    min-width: 100px;
 }
 
 .nav-btn:hover {
     color: rgb(63, 63, 63);
     background-color: white;
+    border: 1px solid gold;
 }
 
 /* Responsive  Design */
