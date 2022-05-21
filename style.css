@@ -139,6 +139,18 @@ nav li {
 
 /* Responsive  Design */
 
+.hide-desktop {
+    display: none;
+}
+
+.hide-tablet {
+    display: block;
+}
+
+.hide-mobile {
+    display: block;
+}
+
 /* Tablet */
 
 @media screen and (max-width: 768px) {
@@ -148,6 +160,15 @@ nav li {
     .box {
         width: 45%;
     }
+    .hide-desktop {
+        display: block;
+    }
+    .hide-tablet {
+        display: none;
+    }
+    .hide-mobile {
+        display: block;
+    }
 }
 
 /* Mobile */
@@ -155,5 +176,14 @@ nav li {
 @media screen and (max-width: 425px) {
     .box {
         width: 100%;
+    }
+    .hide-desktop {
+        display: block;
+    }
+    .hide-tablet {
+        display: block;
+    }
+    .hide-mobile {
+        display: none;
     }
 }
