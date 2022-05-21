@@ -1,12 +1,80 @@
+:root {
+    accent-color: purple;
+}
+
 body {
     color: white;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.header-container {
+    min-height: 10vh;
+    background-color: rgb(63, 63, 63);
+    position: relative;
+}
+
+header {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+header :first-child {
+    flex: 2;
+}
+
+.logo {
+    border: 2px solid white;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.4s border;
+    max-width: 335px;
+    box-sizing: border-box;
+}
+
+.logo:hover {
+    border: 3px solid rgb(165, 19, 165);
+}
+
+.logo-title {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-family: 'Koulen', cursive;
+    margin-right: 5px;
+    transition: 1s color;
+}
+
+.logo-title::first-letter {
+    color: rgb(165, 19, 165);
+}
+
+.logo-title:hover {
+    color: rgb(165, 19, 165);
+}
+
+.logo-role {
+    font-weight: 400;
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(172, 172, 172);
 }
 
 .container {
     max-width: 1000px;
-    min-height: 100vh;
-    background-color: black;
+    min-height: 80vh;
+    background-color: rgb(63, 63, 63);
     margin: 0 auto;
+    position: relative;
 }
 
 main {
@@ -22,8 +90,19 @@ main {
     min-height: 20px;
     box-sizing: border-box;
     background-color: purple;
-    padding: 20px;
     margin: 10px;
+}
+
+.box img {
+    width: 100%;
+}
+
+.box p {
+    padding: 10px 20px;
+}
+
+.box p::first-line {
+    font-weight: 700;
 }
 
 h1 {
@@ -38,6 +117,24 @@ p {
     line-height: 1rem;
     font-family: 'Noto Sans', sans-serif;
     margin-bottom: 5px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+.nav-btn {
+    padding: 10px 15px;
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 1s color, 0.4s background-color;
+}
+
+.nav-btn:hover {
+    color: rgb(63, 63, 63);
+    background-color: white;
 }
 
 /* Responsive  Design */
