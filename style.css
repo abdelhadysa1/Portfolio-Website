@@ -30,6 +30,8 @@ header {
 
 header :first-child {
     flex: 2;
+    text-decoration: none;
+    color: inherit;
 }
 
 .logo {
