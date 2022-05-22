@@ -197,8 +197,30 @@ nav li {
     .hide-mobile-tablet {
         display: none;
     }
+    .header-container {
+        border-bottom: 1px solid white;
+    }
     header {
-        justify-content: center;
+        justify-content: space-around;
+    }
+    nav {
+        position: absolute;
+        top: 58px;
+        left: -105%;
+        width: 100%;
+        background-color: rgb(80, 80, 80);
+        transition: 0.5s left;
+        height: 100vh;
+    }
+    nav li {
+        display: block;
+        width: 100%;
+    }
+    .nav-btn {
+        width: 100%;
+        border: 0;
+        border-bottom: 1px solid white;
+        padding: 25px 5px;
     }
     .logo {
         padding: 0;
@@ -229,7 +251,7 @@ nav li {
         display: none;
     }
     header {
-        justify-content: center;
+        justify-content: space-around;
     }
     .logo {
         padding: 0;
