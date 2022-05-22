@@ -1,5 +1,5 @@
 :root {
-    accent-color: purple;
+    accent-color: peachpuff;
 }
 
 body {
@@ -9,14 +9,16 @@ body {
 
 .header-container {
     min-height: 10vh;
-    background-color: rgb(63, 63, 63);
-    position: relative;
+    background-color: rgb(80, 80, 80);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
 }
 
 header {
     max-width: 1000px;
     margin: 0 auto;
-    position: relative;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -47,24 +49,24 @@ header :first-child {
 }
 
 .logo:hover {
-    border: 2px solid gold;
+    border: 2px solid white;
 }
 
 .logo:hover .logo-title {
-    color: rgb(165, 19, 165);
+    color: peachpuff;
 }
 
 .logo-title {
-    font-weight: 700;
-    font-size: 1.6rem;
+    font-size: 2.0rem;
     line-height: 2.0rem;
-    font-family: 'Koulen', cursive;
+    font-family: 'Bebas Neue', cursive;
     margin-right: 5px;
     transition: 1s color;
+    text-shadow: 1px 1px white;
 }
 
 .logo-title::first-letter {
-    color: rgb(165, 19, 165);
+    color: peachpuff;
 }
 
 .logo-role {
@@ -76,11 +78,10 @@ header :first-child {
 .container {
     max-width: 1000px;
     min-height: 80vh;
-    background-color: rgba(212, 212, 212, 0.575);
     margin: 15px auto;
     position: relative;
     box-sizing: border-box;
-    border: 1px solid rgb(196, 196, 196);
+    margin-top: 11vh;
 }
 
 main {
@@ -94,8 +95,10 @@ main {
 .box {
     width: 30%;
     box-sizing: border-box;
-    background-color: purple;
+    background-color: peachpuff;
     margin: 10px;
+    border: 1px solid peachpuff;
+    box-shadow: 4px 4px 25px rgba(172, 172, 172, 0.527);
 }
 
 .box img {
@@ -107,6 +110,14 @@ main {
     padding: 10px 20px;
 }
 
+.box span.box-content {
+    display: none;
+}
+
+.box:hover span.box-content {
+    display: block;
+}
+
 .box p::first-line {
     font-weight: 700;
 }
@@ -114,7 +125,7 @@ main {
 h1 {
     font-size: 3rem;
     line-height: 3.5rem;
-    font-family: 'Koulen', cursive;
+    font-family: 'Bebas Neue', cursive;
     margin-bottom: 5px;
 }
 
@@ -142,9 +153,9 @@ nav li {
 }
 
 .nav-btn:hover {
-    color: rgb(63, 63, 63);
+    color: rgb(80, 80, 80);
     background-color: white;
-    border: 1px solid gold;
+    border: 1px solid white;
 }
 
 /* Responsive  Design */
