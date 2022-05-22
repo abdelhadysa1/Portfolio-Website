@@ -43,6 +43,7 @@ header :first-child {
     box-sizing: border-box;
     user-select: none;
     text-transform: uppercase;
+    margin: 0 10px;
 }
 
 .logo:hover {
@@ -75,9 +76,11 @@ header :first-child {
 .container {
     max-width: 1000px;
     min-height: 80vh;
-    background-color: rgb(63, 63, 63);
-    margin: 0 auto;
+    background-color: rgba(212, 212, 212, 0.575);
+    margin: 15px auto;
     position: relative;
+    box-sizing: border-box;
+    border: 1px solid rgb(196, 196, 196);
 }
 
 main {
@@ -90,7 +93,6 @@ main {
 
 .box {
     width: 30%;
-    min-height: 20px;
     box-sizing: border-box;
     background-color: purple;
     margin: 10px;
@@ -98,6 +100,7 @@ main {
 
 .box img {
     width: 100%;
+    background-color: white;
 }
 
 .box p {
@@ -117,7 +120,7 @@ h1 {
 
 p {
     font-size: 1rem;
-    line-height: 1rem;
+    line-height: 1.4rem;
     font-family: 'Noto Sans', sans-serif;
     margin-bottom: 5px;
 }
@@ -135,7 +138,6 @@ nav li {
     transition: 1s color, 0.4s background-color, 0.4s border;
     user-select: none;
     text-transform: uppercase;
-    margin-right: 20px;
     min-width: 100px;
 }
 
