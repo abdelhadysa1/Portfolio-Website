@@ -158,6 +158,13 @@ nav li {
     border: 1px solid white;
 }
 
+footer {
+    text-align: center;
+    color: rgb(153, 153, 153);
+    margin-top: 10px;
+    font-size: 0.8rem;
+}
+
 /* Responsive  Design */
 
 .hide-desktop {
