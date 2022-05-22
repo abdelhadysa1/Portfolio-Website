@@ -1,4 +1,4 @@
-window.onload = () => {
+window.addEventListener('load', () => {
     const main = document.querySelector('main')
     main.addEventListener('click', (e) => {
         const parent = e.target.parentElement
@@ -7,4 +7,4 @@ window.onload = () => {
             boxContent.style.display = getComputedStyle(boxContent).display === 'block' ? 'none' : 'block'
         }
     }, true)
-}
+})
