@@ -114,8 +114,8 @@ main {
     display: none;
 }
 
-.box:hover span.box-content {
-    display: block;
+.box:hover  {
+    cursor: pointer;
 }
 
 .box p::first-line {
