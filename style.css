@@ -1,15 +1,23 @@
 :root {
-    accent-color: peachpuff;
+    accent-color: #FDF5DF;
+}
+
+html {
+    background: rgb(255,255,255);
+    background: linear-gradient(273deg, rgba(255,255,255,1) 25%, rgba(253,245,223,1) 85%);
 }
 
 body {
     color: white;
     font-family: 'Noto Sans', sans-serif;
+    background-image: url("./img/portfolio-site-bgtransparent.png");
+    background-position: -50px -35px;
+    background-attachment: fixed;
 }
 
 .header-container {
     min-height: 10vh;
-    background-color: rgb(80, 80, 80);
+    background-color: #F92C85;
     position: fixed;
     width: 100%;
     top: 0;
@@ -46,6 +54,7 @@ header :first-child {
     user-select: none;
     text-transform: uppercase;
     margin: 0 10px;
+    color: white;
 }
 
 .logo:hover {
@@ -53,7 +62,7 @@ header :first-child {
 }
 
 .logo:hover .logo-title {
-    color: peachpuff;
+    color: #FDF5DF;
 }
 
 .logo-title {
@@ -66,13 +75,13 @@ header :first-child {
 }
 
 .logo-title::first-letter {
-    color: peachpuff;
+    color: #FDF5DF;
 }
 
 .logo-role {
     font-weight: 400;
     font-family: 'Noto Sans', sans-serif;
-    color: rgb(172, 172, 172);
+    color: white;
 }
 
 .container {
@@ -82,6 +91,16 @@ header :first-child {
     position: relative;
     box-sizing: border-box;
     margin-top: 11vh;
+}
+
+.main-box {
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.main-box h1 {
+    background-color: #FDF5DF;
+    color: #585858;
 }
 
 main {
@@ -95,9 +114,9 @@ main {
 .box {
     width: 30%;
     box-sizing: border-box;
-    background-color: peachpuff;
+    background-color: #FDF5DF;
     margin: 10px;
-    border: 1px solid peachpuff;
+    border: 1px solid #FDF5DF;
     box-shadow: 4px 4px 25px rgba(172, 172, 172, 0.527);
 }
 
@@ -108,6 +127,7 @@ main {
 
 .box p {
     padding: 10px 20px;
+    color: #5EBEC4;
 }
 
 .box span.box-content {
@@ -127,6 +147,7 @@ h1 {
     line-height: 3.5rem;
     font-family: 'Bebas Neue', cursive;
     margin-bottom: 5px;
+    color: #5EBEC4;
 }
 
 p {
@@ -134,6 +155,7 @@ p {
     line-height: 1.4rem;
     font-family: 'Noto Sans', sans-serif;
     margin-bottom: 5px;
+    color: #5EBEC4;
 }
 
 nav li {
@@ -153,7 +175,7 @@ nav li {
 }
 
 .nav-btn:hover {
-    color: rgb(80, 80, 80);
+    color: #F92C85;
     background-color: white;
     border: 1px solid white;
 }
@@ -215,7 +237,7 @@ footer {
         top: 58px;
         left: -105%;
         width: 100%;
-        background-color: rgb(80, 80, 80);
+        background-color: #F92C85;
         transition: 0.5s left;
         height: 100vh;
     }
